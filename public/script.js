@@ -1,41 +1,41 @@
+/*jshint esversion: 6 */
+
+
 window.onload = () => {
-    let beQuestion = " "
-    console.log(typeof (beQuestion))
+
+    let beQuestion = "";
     behaQuestion.forEach((qes) => {
-        let question = `<li> ${qes.ques} </li>\n`;
-        // let question = "Thang Cong Tu";
+        console.log(qes.ans);
+        let question = `<li onclick="modal('${qes.ans}')"> ${qes.ques} </li>\n`;
         beQuestion = beQuestion + question;
-    })
+    });
     document.getElementById('beha').innerHTML = beQuestion;
+};
+
+
+function popUp(str) {
+    console.log(str);
 }
 
 
-
-
-
 const behaQuestion = [{
-        ques: "Tell Me About Yourself ?",
-        ans: "My Name is Thang Tran"
-    },
-    {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    },
-    {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    },
-    {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    },
-    {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    },
-]
-
-const commonQuestion = [{
-    ques: "",
-    answer: ""
-}]
+    ques: "Tell Me About Yourself ?",
+    ans: "My Name is Thang Tran"
+},
+{
+    ques: "Tell Me About the time you lead in team",
+    ans: "My Name is Thang Tran"
+},
+{
+    ques: "Tell Me About the time you lead in team",
+    ans: "My Name is Thang Tran"
+},
+{
+    ques: "Tell Me About the time you lead in team",
+    ans: "My Name is Thang Tran"
+},
+{
+    ques: "Tell Me About the time you lead in team",
+    ans: "My Name is Thang Tran"
+},
+];
