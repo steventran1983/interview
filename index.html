@@ -8,13 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="./public/script.js"></script>
     <script src="./public/behaviral.js"></script>
+    <link rel="stylesheet" href="./public/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
+    <div class="popup" id="popup">
+        <div id="modalContent" class="modalContent">
+            <div class="modalContent-header" id="modalContent-header">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 question" id="behaviral-header-question">
+                    </div>
+                    <div class="col-lg-6 col-md-6 text-right" id="behaviral-header-clsButton">
+                        <button onclick="clsButton()" type="button" class="clsButton" id="clsButton">x</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modalContent-body" id="modalContent-body">
 
+            </div>
+
+        </div>
+        <!-- <div id="showAnswer">Toi ten la Thang</div> -->
+    </div>
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -38,39 +56,31 @@
                         </div>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+
             </div>
         </nav>
     </header>
     <main>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 text-center">
-                    <h2>Behaviral question</h2>
-                    <ul id="beha">
-
-                    </ul>
+            <div class="behaviral">
+                <div class="behaviral-header" id="behaviral-header">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 question" id="behaviral-header-question">
+                            <h3>Behaviral Question</h3>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-6 text-center">
-                    <h2>Common question</h2>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 text-center">
-                    <h2>Technical question</h2>
-                    <ul id="technical">
-
-                    </ul>
-                </div>
-                <div class=" col-lg-6 col-md-6 text-center">
-                    <h2>Trouble shooting skill</h2>
+                <div class="behaviral-question" id="behaviral-question">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6" id="behaviral-anwser-left">
+                        </div>
+                        <div class="col-lg-6 col-md-6" id="behaviral-anwser-right">
+                        </div>
+                    </div>
                 </div>
 
             </div>
+
         </div>
     </main>
 
