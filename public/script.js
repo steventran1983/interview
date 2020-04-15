@@ -3,21 +3,16 @@ window.onload = () => {
     let beQuestion_left = "";
     let beQuestion_right = "";
     for (let i = 0; i < behaQuestion.length; i++) {
-        let question = `<li onclick="modal('${behaQuestion[i].ans}','${behaQuestion[i].ques}')"> ${behaQuestion[i].ques} </li>\n`;
+        let question = `<li onclick="modal('${behaQuestion[i].ans}','${behaQuestion[i].ques}')"> ${i}. ${behaQuestion[i].ques} </li>\n`;
         if (i < 15) {
             beQuestion_left = beQuestion_left + question;
-            console.log(`${i} ${beQuestion_left} -=left=-`);
         } else {
             beQuestion_right = beQuestion_right + question;
-            console.log(`${i} ${beQuestion_right} -=right=-`);
         }
     }
     document.getElementById('behaviral-anwser-left').innerHTML = beQuestion_left;
     document.getElementById('behaviral-anwser-right').innerHTML = beQuestion_right;
 };
-
-
-
 
 
 const behaQuestion = [{
@@ -26,7 +21,7 @@ const behaQuestion = [{
     },
     {
         ques: "Why do you want to leave?",
-        ans: "My Name is Thang TranFirst, I would like to say, I am happy with my team so far. They teach me a lot of technical skill such as : Linux system, TMO telecom network infrastructure, python, java , experience etc.. I did learn a lot of thing with team. But right now, I would like to focus more about software which I love and have firm foundation about. I want to looking for something greater, something has more meaning that I can live and work with my passion that is software, even I know it will take more challenge for myself. But when you get it , So when I come back home after work , I can feel happy , enjoy proud of what I did"
+        ans: "First, I would like to say, I am happy with my team so far. They teach me a lot of technical skill such as : Linux system, TMO telecom network infrastructure, python, java , experience etc.. I did learn a lot of thing with team. But right now, I would like to focus more about software which I love and have firm foundation about. I want to looking for something greater, something has more meaning that I can live and work with my passion that is software, even I know it will take more challenge for myself. But when you get it , So when I come back home after work , I can feel happy , enjoy proud of what I did"
     },
     {
         ques: "Why do you love software?",
@@ -57,11 +52,11 @@ const behaQuestion = [{
         ques: "What challenges are you looking for in this position?",
         ans: "Working the new thing, new system, new framework, all kind of stuff are the challenge with me in this position I can see. However, I am quick leaner, so from my perspective I will get it soon and hand-on project right away. Since now I can focus only in software, so I have more chance to go deeply for each one that I do not have time before. <br>Also I expect to practice and enhance further my people communication skills. What highly motivate me are the challenges in front of me driving me to strive harder. I believe I have the ability to effectively meet challenges and have the flexibility and skills necessary to handle challenging jobs. "
     }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
+        ques: "Why Should We Hire You?",
+        ans: "Base on our discussion and I researching about the position, Several reasons you should hire me<br>first I realize I am qualify most of requirement of this role. That is a good one right. Second My experience with technology and software skill make me a good match for this position. As you can see In my resume, I did working on several web applications stool that help my colleague save a ton of time and effort by automation job brought to me many recognition up to department. Finally, I am passionate of software, and you know, when someone love in something, they will invest everything they have into it. With me I have the clear schedule and plan to invest time and effort concentrate to work, learn about software to enhance my knowledge in order to apply the best technology to project I handle in future.<br>I would love to bring my coding skills, my talent  and my passion for implementing new technologies to this position."
     }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
+        ques: "Why do you like this position?",
+        ans: "First, I realize my competency and my skill are revelant and fit to this role, so I am confident to apply for it<br>Secondly, As you know I am really passionate about software, specially web development. In the job description, I can see it contains all of technologies I extremely interested in, I believe in this role , I have the place where can I utilize my software skill to contribute to the team and go to success<br>Finally, when join the team , I can work and exchange the experience with sr or pe software engineer, that will help me quick growth in my software skill that I do not have much in current position. "
     }, {
         ques: "Tell Me About the time you lead in team",
         ans: "My Name is Thang Tran"
