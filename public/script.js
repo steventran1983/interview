@@ -4,7 +4,7 @@ window.onload = () => {
     let beQuestion_right = "";
     for (let i = 0; i < behaQuestion.length; i++) {
         let question = `<li onclick="modal('${behaQuestion[i].ans}','${behaQuestion[i].ques}')"> ${behaQuestion[i].ques} </li>\n`;
-        if (i < 20) {
+        if (i < 15) {
             beQuestion_left = beQuestion_left + question;
             console.log(`${i} ${beQuestion_left} -=left=-`);
         } else {
@@ -44,19 +44,18 @@ const behaQuestion = [{
         ques: "What is your weakness?",
         ans: "Well, I think my weakness is my articulating. My accent and pronunciation is pretty thick, sometime make a unconformable the people I talking with. However, I am working on that every day, at home, driving to workplace, I open some YouTube channel to repeat with their accent. And I think communication is the key factor to improve this and go over this weakness, that’s why I try talk as much as I can in team, as well as hold frequently for presentation such as MOP review, introduce new application tool with team. So, for now with 3 years ago when I am join TMO, I have the big step of articulating improvement, if you can understand me now that is my achievement"
     },
-
     {
         ques: "What work enviroment do you prefer?",
         ans: `I really like the environment in my current position. My manager is a great resource and always willing to help out when I run into an issue, but they trust me to get my work done so I have a lot of freedom in how I schedule and prioritize, which is very important to me.I think all of us have the Power of trust training, so this is is a usercase we can apply right.  Everyone has their own cubicle, so it’s often pretty quiet to get our work done, but our our team has a lot of check-in meetings and communicates frequently via Slack or talking directly if we have the question,  so we still get a lot of opportunities to bounce ideas off each other to collaborate and contribute. `
     }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
+        ques: "WHY TMO",
+        ans: "I have been working with TMO for 2 year and all I can say is that I’m lucky to be part of this company. The atmosphere is cool. My teammates are all kind and always ready to help if you need them. My bosses are always keeping in touch to see how I am doing with my job and provide feedback as well as recognition on the job well done. And of course, the benefits are the best from health benefits to dental to childcare, to phone service employee discount and many more to mention. "
     }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
+        ques: "Does your manager know you have applied for this job?",
+        ans: "Yes, he does. He knows it, before applied I did talk with him about job and explain the reason I want to apply for software position. Actually I think he does want to lost me but because of my career success he will agree and support me 100% . He is cool manager. He always stands behind me to push me go further In career path."
     }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
+        ques: "What challenges are you looking for in this position?",
+        ans: "Working the new thing, new system, new framework, all kind of stuff are the challenge with me in this position I can see. However, I am quick leaner, so from my perspective I will get it soon and hand-on project right away. Since now I can focus only in software, so I have more chance to go deeply for each one that I do not have time before. <br>Also I expect to practice and enhance further my people communication skills. What highly motivate me are the challenges in front of me driving me to strive harder. I believe I have the ability to effectively meet challenges and have the flexibility and skills necessary to handle challenging jobs. "
     }, {
         ques: "Tell Me About the time you lead in team",
         ans: "My Name is Thang Tran"
