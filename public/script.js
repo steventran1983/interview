@@ -50,66 +50,81 @@ const behaQuestion = [{
         ans: "Yes, he does. He knows it, before applied I did talk with him about job and explain the reason I want to apply for software position. Actually I think he does want to lost me but because of my career success he will agree and support me 100% . He is cool manager. He always stands behind me to push me go further In career path."
     }, {
         ques: "What challenges are you looking for in this position?",
-        ans: "Working the new thing, new system, new framework, all kind of stuff are the challenge with me in this position I can see. However, I am quick leaner, so from my perspective I will get it soon and hand-on project right away. Since now I can focus only in software, so I have more chance to go deeply for each one that I do not have time before. <br>Also I expect to practice and enhance further my people communication skills. What highly motivate me are the challenges in front of me driving me to strive harder. I believe I have the ability to effectively meet challenges and have the flexibility and skills necessary to handle challenging jobs. "
+        ans: "Working the new thing, new system, new technology , new framework, all kind of stuff are the challenge with me in this position I can see. However, I am quick leaner, so from my perspective I will get it soon and hand-on project right away. Since now I can focus only in software, so I have more chance to go deeply for each one that I do not have time before. <br>Also I expect to practice and enhance further my people communication skills. What highly motivate me are the challenges in front of me driving me to strive harder. I believe I have the ability to effectively meet challenges and have the flexibility and skills necessary to handle challenging jobs. "
     }, {
         ques: "Why Should We Hire You?",
-        ans: "Base on our discussion and I researching about the position, Several reasons you should hire me<br>first I realize I am qualify most of requirement of this role. That is a good one right. Second My experience with technology and software skill make me a good match for this position. As you can see In my resume, I did working on several web applications stool that help my colleague save a ton of time and effort by automation job brought to me many recognition up to department. Finally, I am passionate of software, and you know, when someone love in something, they will invest everything they have into it. With me I have the clear schedule and plan to invest time and effort concentrate to work, learn about software to enhance my knowledge in order to apply the best technology to project I handle in future.<br>I would love to bring my coding skills, my talent  and my passion for implementing new technologies to this position."
+        ans: "I understand you have many candidate apply for this job and pick the right person is very important.  Base on our discussion and I researching about the position, I strong believe I am the person for this job <br>first I realize my skill set and experience are qualify most of requirement of this role. That is a good one. Second My experience with technology and software skill make me a good match for this position. As you can see In my resume, I did working on several web applications stool that help my colleague save a ton of time and effort by automation job brought to me many recognition up to department. Finally, I am passionate of new technology : cloud , kubernetes , jenkin ansible etc ...and software, and you know, when someone love in something, they will invest everything they have into it. With me I have the clear schedule and plan to invest time and effort concentrate to work, learn about software to enhance my knowledge in order to apply the best technology to project I handle in future.<br>I would love to bring my coding skills, my talent  and my passion for implementing new technologies to this position."
     }, {
         ques: "Why do you like this position?",
         ans: "First, I realize my competency and my skill are revelant and fit to this role, so I am confident to apply for it<br>Secondly, As you know I am really passionate about software, specially web development. In the job description, I can see it contains all of technologies I extremely interested in, I believe in this role , I have the place where can I utilize my software skill to contribute to the team and go to success<br>Finally, when join the team , I can work and exchange the experience with sr or pe software engineer, that will help me quick growth in my software skill that I do not have much in current position. "
     }, {
-        ques: "Tell Me About the time you lead in team",
+        ques: "tell me about what do done last 6 months",
+        ans: "In last 6 months I complete a bunch of things let me tell you what I remember on top of my head<br>1. I finish 3 major project, 1 is individual and 2 with team members. Those are software upgrade , hardware modernization and  integration directly enodeB into our system, since before all EnodeB connect to mediator and got some low performace so we decide to move all EnodeB direct to OSS. I also support in as secondary for multiple project, contribute to team and go to success together<br>2. For initiative project , I complete 2 awsome tool , first is ATS User Dashboard that provide 11 reports for market and region team also NOC 1.5 team utilize and take avdvadge from it. This was regconized from Department level and one is NBI postcheck automation , this is full stack software so if we have time today I will go over with you , that’s very good tool <br>3. I did open some session with the team to sharing the knowledge about programing langaue , docker and ansible. Bring the new technology into the team is my hobby<br>4. is interesting one , I complete master degree and I very happy and proud of that. Its big achievement  and finally my time and effort has been paid off. "
+    }, {
+        ques: "Where do you see yourself in five years?",
+        ans: "I usually make the short term plan rather then long term as 5 years. I consider that everyday I come the office, get the job done , commit project before deadline collborate and contribute with team is my proritize. For now, I think get this job is the most important thing I plan in hand, after that If I got this, I will spend time learn in and hour of team, meet new people and try my best to adapt job requriement that I did not cover form now."
+    }, {
+        ques: "What is your dream job ?",
+        ans: "The first thing I can tell in my dream job is fit to my skill sets and compentency, so at least I can compelte all project and requirement.  Base on my skills and interest in new technology and software, I would like my drean job have the place where I can learn the new thing, exchange and learn experience from team member. The last one, the job must proivde an place that I can utilize my skill set and bring new technology into. I finally is good teamwork , since I consider success with the team are always important than an individual. "
+    }, {
+        ques: "What Makes You Unique?",
+        ans: "I really enjoy learning new things and am constantly seeking out new learning opportunities. That also help me perfect fit to this position, since I see many new technologies in job description so willing to learn the new thing will help me quick accommodate those and leverange them into daily job. And also I am not afraid with a challenge , because I know challenge will me me strike harder, to overcome challanleng you need find new way , new solution so that help you improve your knowledge and skill. I  would like to bring one example to prove that, 2 years ago, manger require build the centralize webpage for all user change the password, I vonteer to take that and that in time I do not know about web development but I still pick it up. So I start my journey and spend time and effort to research and learn the new thing from front-end to back-end, logic and security. After 1 months I can bulld the website for users execute the password change through 20 system in centralized webpage . My manager appricitea that effort recognize me to wholte team as well as nominate up to department level. "
+    }, {
+        ques: "What Motivates You?",
+        ans: "Well I can tell you, the thing is motivate me is challenge. I love challenge because it make me strike harder. During find the way ovecome challenge you should learn the new thing to update and improve yourself. Also I like the feeling when I overcome the challenge, happy and satisfy you get what you paid for. "
+    }, {
+        ques: "Describle you in 1 word",
+        ans: "In one word, I would say I am a person of Integrity, that becuase I will always do a great job, I always contribute and foucs 100% for every tasks I have and commmit the deadline. Above of all, you can rely on me to be professional in my role"
+    }, {
+        ques: "####################################################### Team and behaviral question",
         ans: "My Name is Thang Tran"
+    }, {
+        ques: "Tell Me About the time you lead in team",
+        ans: "From the resume you can see I list one project call NBI Post check automated tool so I would like to talk about that The situation is : our team spend a lot of time and effort to do the post check after major software update, basically FM/PM/CM,  Also team have to send and waiting the confirm from NBI team to make sure the data flow is transferred to their end system, that’s extremely inconvenience and no one want that. the is a paint point that the team experience for long time. <br>So I just thinking why we don’t have the tool and it can help do all those post check automation, further can help the framework so no only the team can use but also other team can add if they need to<br>I did bring my idea and talk with my manager, and got green light from him and we bring that on the table in the team meeting and got the agree with whole team.Next step and make the plan, choose the technology, framework, design logic etc … and complete for one system. After completely done for one I set up the presentation with the team and introduce the features, take feedback and gathering new team member get involved to deployment for whole system<br>I also create the dedicate slack channel so we can discuss and answer the question if the team got the problem or not clear about steps of integrating new system, knowledge sharing is beautiful right. <br>We work together and during 2 week, with 5 of us, we can complete for post check of FM part, and currently we working for the rest of NBI check<br>And result of this project is bring the powerful tool and provide many benefits for the team such as : team member can understand how web development is, front-backend working , how is deployment application by docker container, this is most useful thing for the team because the end of the day, OSS system will use docker container to build cloud native app, so this is good preparation for feature. Also, we got the highly appreciate from Sr manager as well as director. We hope our team will be recognize in while department when the tool completely done. "
+    }, {
+        ques: "Tell me about the time you handle the difficult situation? ",
+        ans: "One situation just pop up on my mind now is when I am with one team member woking on the OSS dashboard. Since in OSS team we have different system support from 2 vendor Nokia and Ericson. So I am done for my part with 11 reports from Nokia side and going to release , however my manager want to make the tool completely contains both side, therefore, he request me work with one sr engineer to complete the left part and we have just 3 weeks to deadline you know. <br>I send coupe of email and talking with him, divide the task and explain the framework, he said OK and just waiting for first data coming, however I am waiting for 10 days long but still do not see any improvement. Since he is sr engineer and I know he good about E// system, but I am just associate engineer so I feel my voice is not weight to him, also I do not want to report to my manager since I think we can talk and work out. I stand up and call him and ask the reason why nothing happen, first he said he busy and he does not have time but talk little bit more so I know the reason is he afraid to work on new stuff , I mean web technology , one problem about competencies and he not familiar that make him not interesting in. However, we have to delivery something in the deadline, so I tell him I can dedicate 1 hour per day to work with him, knowledge sharing and let him know the big picture of the tool. After that we work every day together, first he generate the report I help to populate into the web, also I share monitor to him follow up , and just need 1 week later he can do it from end to end. And we complete the dashboard on time. My manager is very sastify with that and we together have a presentation with directory about that tool and got many complismnet. I learn one thing here is we need to listerning first and do not afraid to talk straight. I think if we bring this problem on the table early , the project will be more perfect and we do not rush as last minute"
+    }, {
+        ques: "Tell me about the time you handle the difficult situation?",
+        ans: "One situation just pop up on my mind now is when I am with one team member woking on the OSS dashboard. Since in OSS team we have different system support from 2 vendor Nokia and Ericson. So I am done for my part with 11 reports from Nokia side and going to release , however my manager want to make the tool completely contains both side, therefore, he request me work with one sr engineer to complete the left part and we have just 3 weeks to deadline you know. <br>I send coupe of email and talking with him, divide the task and explain the framework, he said OK and just waiting for first data coming, however I am waiting for 10 days long but still do not see any improvement. Since he is sr engineer and I know he good about E// system, but I am just associate engineer so I feel my voice is not weight to him, also I do not want to report to my manager since I think we can talk and work out. I stand up and call him and ask the reason why nothing happen, first he said he busy and he does not have time but talk little bit more so I know the reason is he afraid to work on new stuff , I mean web technology , one problem about competencies and he not familiar that make him not interesting in. However, we have to delivery something in the deadline, so I tell him I can dedicate 1 hour per day to work with him, knowledge sharing and let him know the big picture of the tool. After that we work every day together, first he generate the report I help to populate into the web, also I share monitor to him follow up , and just need 1 week later he can do it from end to end. And we complete the dashboard on time. My manager is very sastify with that and we together have a presentation with directory about that tool and got many complismnet. I learn one thing here is we need to listerning first and do not afraid to talk straight. I think if we bring this problem on the table early , the project will be more perfect and we do not rush as last minuten"
+    }, {
+        ques: "How do you Prioritize Your Work?",
+        ans: "My to-do list helps me maintain a steady workflow, but I also realize priorities change unexpectedly. With that in mind, I try not to overload my list with too many tasks, to make room for any necessary adjustments.On one particular day recently, I had planned to spend most of my time joining the bridge to troubleshooting the case with vendor. Then I did a quick check-in with my manager. He mentioned that we have an impairment and need support immediately. I moved to other bridge and try my best to work with the vendor to recovery service to avoid impact to user as much as possible. After few hours to collecting the log and reboot the VMs , the system is full recovery, finally we got job done and bring service back to user.I did several heath check to make sure service full recovery and report with my manager.  I call the user again and we continue to troubleshooting his issue. By the end of the day, I finally find the RCA of the issue and help user resole the issue. Important thing here we should distinguish what is urgent and what is important to prioritize and organize workload efficiency and productively  "
+    }, {
+        ques: "How do you feel about working in a team environment?",
+        ans: "I enjoy to work in the team environment, that is a great opportunity for me to improve communication skill , leadership skill as well as learn experience from team member. Let me tell you the project that me and one college handle. That’s the major software upgrade across of system. I familiar with kind of system and I take the lead. First , we together join the kick off meeting and MOP review, ask and clarify the ambiguous step and precess. Review and add the test case etc.After that 2 of us work together to discuss the workload sharing. We agree to divide equality the number of system to each other and my responsibility to go over all the postchecks in the first upgrade, then I with him in the second in case he still get confusion in new system. I also holding the weekly call with him and create the slack channel for more convenience exchange and solve the problem. We help with each other to handle the work if one got urgent task. After 2 months , 20 system has been completed. we document all in sharepoint and request the lesson learn with vendor. My manager surprise since the project is kind of huge tasks but going very smooth. He send both of us reconization stars as well  "
+    }, {
+        ques: "Share an example of a team project that failed",
+        ans: "One of my past teams struggled with communication. Many tasks weren’t completed, deadlines passed and the project ultimately failed. I tried different methods of communication throughout the project. Through that experience, I learned how important it is to set communication expectations from the very start of a project. That way, everyone stays in contact and understands what they need to do to make the project a success"
+    }, {
+        ques: "Tell Me About a Time You Demonstrated Leadership Skills.",
+        ans: "From the resume you can see I list one project call NBI Post check automated tool so I would like to talk about that The situation is : our team spend a lot of time and effort to do the post check after major software update, basically FM/PM/CM,  Also team have to send and waiting the confirm from NBI team to make sure the data flow is transferred to their end system, that’s extremely inconvenience and no one want that. the is a paint point that the team experience for long time. <br>So I just thinking why we don’t have the tool and it can help do all those post check automation, further can help the framework so no only the team can use but also other team can add if they need to<br>I did bring my idea and talk with my manager, and got green light from him and we bring that on the table in the team meeting and got the agree with whole team.Next step and make the plan, choose the technology, framework, design logic etc … and complete for one system. After completely done for one I set up the presentation with the team and introduce the features, take feedback and gathering new team member get involved to deployment for whole system<br>I also create the dedicate slack channel so we can discuss and answer the question if the team got the problem or not clear about steps of integrating new system, knowledge sharing is beautiful right. <br>We work together and during 2 week, with 5 of us, we can complete for post check of FM part, and currently we working for the rest of NBI check<br>And result of this project is bring the powerful tool and provide many benefits for the team such as : team member can understand how web development is, front-backend working , how is deployment application by docker container, this is most useful thing for the team because the end of the day, OSS system will use docker container to build cloud native app, so this is good preparation for feature. Also, we got the highly appreciate from Sr manager as well as director. We hope our team will be recognize in while department when the tool completely done. "
     }, {
         ques: "Tell Me About the time you lead in team",
         ans: "My Name is Thang Tran"
     }, {
-        ques: "Tell Me About the time you lead in team",
+        ques: "Do you prefer teamwork or working independently?",
+        ans: "I can honestly say that I’m comfortable both in working independently as well as in contributing to teams, and I was lucky enough in my previous job to be able to do some of both. Especially at the beginning of projects, I appreciate being able to strategize approaches with team members. Once we have our plan of action established, though, I enjoy working independently on my assigned tasks.  "
+    }, {
+        ques: "How would you handle it if there was a problem with a member of your team not doing their fair share or work?",
+        ans: "I would first talk to them privately in a non-confrontational manner, using “I” statements to suggest that there might be a problem that we should resolve together. I’d also do my best to determine the root of the issue and to see if I or other team members could improve this person’s productivity. This approach works for me about 95% of the time; in cases where it doesn’t, I ask for a private consultation with my supervisor to brainstorm other solutions."
+    }, {
+        ques: "How do you keep yourself organized?",
         ans: "My Name is Thang Tran"
     }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
-    }, {
-        ques: "Tell Me About the time you lead in team",
-        ans: "My Name is Thang Tran"
+        ques: "What is your pet peeves",
+        ans: "I dislike when I see a team member refusing to carry his or her weight on a project. As team members, it is our job to help the whole team achieve success. When I see someone not doing his or her task, I communicate clearly and effectively with the team about my concerns and try to come up with a solution, such as redistributing some of the tasks"
+    },{
+        ques: "Tell me about a time you worked well as part of a team",
+        ans: "I dislike when I see a team member refusing to carry his or her weight on a project. As team members, it is our job to help the whole team achieve success. When I see someone not doing his or her task, I communicate clearly and effectively with the team about my concerns and try to come up with a solution, such as redistributing some of the tasks"
+    },{
+        ques: "How do you deal with tough challenge? ",
+        ans: "I dislike when I see a team member refusing to carry his or her weight on a project. As team members, it is our job to help the whole team achieve success. When I see someone not doing his or her task, I communicate clearly and effectively with the team about my concerns and try to come up with a solution, such as redistributing some of the tasks"
+    },{
+        ques: "Tell me about time when you went above and beyond what was require at work. ",
+        ans: "I dislike when I see a team member refusing to carry his or her weight on a project. As team members, it is our job to help the whole team achieve success. When I see someone not doing his or her task, I communicate clearly and effectively with the team about my concerns and try to come up with a solution, such as redistributing some of the tasks"
+    },{
+        ques: "How you deal with the people different working style? ",
+        ans: "I dislike when I see a team member refusing to carry his or her weight on a project. As team members, it is our job to help the whole team achieve success. When I see someone not doing his or her task, I communicate clearly and effectively with the team about my concerns and try to come up with a solution, such as redistributing some of the tasks"
     },
 ];
