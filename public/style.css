@@ -47,11 +47,15 @@ h4 {
 }
 
 .behaviral,
-.behaviral-question {
+.behaviral-question,
+.reliability,
+.reliability-question
+{
   padding: 1rem;
 }
 
-.behaviral-header {
+.behaviral-header,
+.reliability-header {
   padding: 10px 10px;
   background-color: coral;
   color: white;

@@ -12,11 +12,72 @@ window.onload = () => {
     }
     document.getElementById('behaviral-anwser-left').innerHTML = beQuestion_left;
     document.getElementById('behaviral-anwser-right').innerHTML = beQuestion_right;
+
+
+    let reliability_left = "";
+    let reliability_right = "";
+    for (let i = 0; i < reliability.length; i++) {
+        let question = `<li onclick="modal('${reliability[i].ans}','${reliability[i].ques}')"> ${i}. ${reliability[i].ques} </li>\n`;
+        if (i < 5) {
+            reliability_left = reliability_left + question;
+        } else {
+            reliability_right = reliability_right + question;
+        }
+    }
+    document.getElementById('reliability-anwser-left').innerHTML = reliability_left;
+    document.getElementById('reliability-anwser-right').innerHTML = reliability_right;
+
 };
+
+const reliability = [{
+    ques: "What is system Reliability",
+    ans: "The System Reliability Engineer (SRE) improves and protects the software and system in company, including management of scalability, availability, latency, performance, security, and capacity, and delivery of software faster, better, and cheaper. Enable great customer experience and product innovation by continuous improvement of operational support.  In short term I think system reliability is keep the system up, running and available 24 hour by 7. As we know no products work as 100% as expected, our role just tries the best to keep Hight reliability as long as we can"
+}, {
+    ques: "What is DevOps",
+    ans: "DevOps is a set of practices that works to automate and integrate the processes between software development and IT teams, so they can build, test, and release software faster and more reliably. Today instead of releasing big sets of features, companies are trying to see if small features can be transported to their customers through a series of releasing. This has many advantages like quick feedback from customers, better quality of software etc. To achieve this, companies are required to:<br>Increase deployment frequency<br>Lower failure rate of new releases<br>Faster mean time to recovery in the event of new release crashing<br>DevOps fulfills all these requirements and helps in achieving software delivery."
+},
+{
+    ques: "What is CI/CD",
+    ans: "Continuous Integration (CI):is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early. Continuous integration foucs on testing automation to check that the application is not broken whenever new commits are integrated into the main branch.<br>Continuous delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way"
+},
+{
+    ques: "What is DOCKER",
+    ans: "Docker is a containerization platform which packages your application and all its dependencies together in the form of containers so as to ensure that your application works seamlessly in any environment even it in development , testing phrase or production.<br>Docker containers anything that can be installed on a server.<br>This guarantees that the software will always run the same, regardless of its environment."
+},
+{
+    ques: "What is Ansible?",
+    ans: "Ansible is an open-source automation tool, or platform, used for IT tasks such as configuration management, application deployment, and provisioning. Automation is crucial these days, Automation simplifies complex tasks, not just making developers’ jobs more manageable but allowing them to focus attention on other tasks that add value to an organization. With me, ansible is python in English version, I really love it also I have the project that utilized ansible to develop the tool. "
+},
+{
+    ques:"What is cloud",
+    ans:"The cloud refers to servers that are accessed over the Internet, and the software and databases that run on those servers. Cloud servers are located in data centers all over the world. By using cloud computing, users and companies don't have to manage physical servers themselves or run software applications on their own machines. That is great benefit of cloud. <br>Usually cloud provide 3 services: Software-as-a-Service (SaaS) (saleforce), Platform-as-a-Service (PaaS) AWS Vms,digital Oacen, Infrastructure-as-a-Service (IaaS). So depending on the demand of use, user can choose the right service they want. "
+},
+{
+    ques:"what is Jenskin",
+    ans:"Jenkin is an open source automation server. With Jenkins, we can accelerate the software development process by automating it. Jenkins manages and controls software delivery processes throughout the entire lifecycle, including build, document, test, package, stage, deployment, static code analysis and much more. I think Jenskin is a part of CI. I used to build sevral test case before with Jenkin when we want to automate post check automation post check "
+},
+{
+    ques:"What is Kubernetes",
+    ans:"Kubernetes is an open source project that has become one of the most popular container orchestration tools around; it allows you to deploy and manage multi-container applications. There are many advantage from Kubernetes such as : scaling: Kubernetes allows you scaling resources not only vertically but also horizontally, easily and quickly. Clear dashboard to monitoring the container etc.. I am researching and learn about Kubernetes now, and implementing  the lab of Kubernetes cluster for my team , the lab contain 4 VMs, one for  master and three for slaves "
+},
+{
+    ques:"what is Splunk",
+    ans:"Splunk is a software technology which is used for monitoring, searching, analyzing and visualizing the machine generated data in real time. It can use to monitor and read different type of log files and stores data as events in indexers. This tool allows you to visualize data in various forms of dashboards. From our team, I did work on Splunk quite of time when integrate OSS physical host into Splunk, and also build dashboard to monitor the data transferring"
+},
+{
+    ques:"what is Puppet",
+ans:"Pupet is a configuration management tool to ensure all the systems are configured to the desired states . Puppet also used as a deployment tool that help automatically deploy software on the system. Same as many devopos tool, puppet will have master environment contain main configuration and client environment that install in the server in the network. "
+},
+{
+    ques:"The End of Interview",
+    ans:"Who’s the most successful recently hire and why? <br>What is the biggest challenge in the team and how this position can help to overcome that challenge?<br>What additional skill and experience do you wish I had to make me a better fit on this job?<br>Is there anything leaving you a hesitancy to hiring for this position?<br>What is the next step in the process? "
+}
+
+];
 
 
 const behaQuestion = [{
-    ques: "Tell Me About Yourself ?",
+    ques: "What is DevOps",
     ans: "My name is Thang Tran. I currently engineer at Tier 2 OSS team. IN my current role, I am responsible for the system administrator. Handle Fault management, Performance management, configuration management, Audit of for TMO network element (BSC,RNC, enodeB about RAN side). <br>I am also main person in the team to design, develop and maintain the monitoring script and collaborate cross- functional team to build the automation tool, web develop<br>In addition, my daily job are troubleshoot and resolve highly complex technical design or service issues that cannot be resolved through normal operations and maintenance procedures,find the root cause analysis to drive issue resolution and limits impact to the internal user.I also provide on-site and remote support during major upgrade and integrate new node into system with vendor<br>For short 2 years I have several achievements with team , complete over 10 main projects and develop several applications, automation tools. Based on my contribution and support to users, I have over 10 stars recognition 2-time recognited front of  TSD&S department. <br>For education, I just complete master of SW from Colorado technical University  GPA 4.0. One BS computer science and 1 BS about networking engineer <br>I am passionate about new technology, cloud and DevsOp tool , especially database and software. What I am looking for in this position is an opportunity to utilize my skills, , improving it, learning new thing and collaborate, contribute to the team.  "
 },
 {
