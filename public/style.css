@@ -49,13 +49,15 @@ h4 {
 .behaviral,
 .behaviral-question,
 .reliability,
-.reliability-question
+.reliability-question,
+.database,
+.database-question
 {
   padding: 1rem;
 }
 
 .behaviral-header,
-.reliability-header {
+.reliability-header,.database-header {
   padding: 10px 10px;
   background-color: coral;
   color: white;

@@ -4,7 +4,7 @@ window.onload = () => {
     let beQuestion_right = "";
     for (let i = 0; i < behaQuestion.length; i++) {
         let question = `<li onclick="modal('${behaQuestion[i].ans}','${behaQuestion[i].ques}')"> ${i}. ${behaQuestion[i].ques} </li>\n`;
-        if (i < 21) {
+        if (i < 24) {
             beQuestion_left = beQuestion_left + question;
         } else {
             beQuestion_right = beQuestion_right + question;
@@ -27,7 +27,58 @@ window.onload = () => {
     document.getElementById('reliability-anwser-left').innerHTML = reliability_left;
     document.getElementById('reliability-anwser-right').innerHTML = reliability_right;
 
+
+    let database_left = "";
+    let database_right = "";
+    for (let i = 0; i < database.length; i++) {
+        let question = `<li onclick="modal('${database[i].ans}','${database[i].ques}')"> ${i}. ${database[i].ques} </li>\n`;
+        if (i < 5) {
+            database_left = database_left + question;
+        } else {
+            database_right = database_right + question;
+        }
+    }
+    document.getElementById('database-anwser-left').innerHTML = database_left;
+    document.getElementById('database-anwser-right').innerHTML = database_right;
+
 };
+
+const database =[
+    {
+        ques:"Why do you want this job",
+        ans:"First, I realize my competency and my skill are revelant and fit to this role, so I am confident to apply for it. Second, As you know I am really passionate about software, specially database and web development. In the job description, I can see it contains all of technologies I extremely interested in, I believe in this role , I have the place where can I utilize my software skill to contribute to the team and go to success In this position,  I can work and exchange the experience with sr or pe software engineer, that will help me quick growth in my software skill that I do not have much in current position.<br>My level of SQL technical ability is a strong match for this role and I have experience of working with other developers, engineers and also vendor. I want this SQL position because I feel I can contribute to the team positively, I can bring something new in terms of my competence."
+    },{
+        ques:"What do you understand by database?",
+        ans:"Database is an organized collection of related data where the data is stored and organized to serve some specific purpose.Exmaple company have the database to maintain all the employee information"
+    },{
+        ques:"What is SQL",
+        ans:"SQL (Structured Query Language) is a standardized language that's used to manage relational databases and perform various operations on the data in them. For basic operation Create, Read, Update and Delete "
+    },{
+        ques:"What is DBMS",
+        ans:"DBMS stands for Database Management System. It is a collection of application programs which allow the user to organize, restore and retrieve information about data efficiently and effectively."
+    },{
+        ques:"WHAT IS A RELATIONAL DATABASE MANAGEMENT SYSTEM (RDBMS)?",
+        ans:"A relational database management system (RDBMS) is a program that allows you to create, update, and administer a relational database. Most relational database management systems use the SQL language to access the database."
+    },{
+        ques:"What are the various types of relationships in Database? Define them",
+        ans:"One to One , for example 1 employee has just 1 P number and 1 P number present just 1 employee. One to many and many to many"
+    },{
+        ques:"what is Normalization",
+        ans:"Normalization is a technique use to organizing the data into multiple relation table to minimize no data redundancy .First Normal Form <br>-Each column should contain atomic value <br>-A column should contain value as the same type<br>-Each column should have unique name<br><br>Second normal Form <br>First satisfy the first normal form <br>Its should not have partial dependencies in the table<br> <br>Third Normal Form <br>Satisfy the 2 normal form <br>Should not contain transitive dependency          "
+    },{
+        ques:"",
+        ans:""
+    },{
+        ques:"",
+        ans:""
+    },{
+        ques:"",
+        ans:""
+    },{
+        ques:"",
+        ans:""
+    },
+];
 
 const reliability = [{
     ques: "What is system Reliability",
@@ -208,5 +259,28 @@ const behaQuestion = [{
 }, {
     ques: "The idea for the team ",
     ans: "Actually, I am a creative person, I usually bring a good idea to the team base on my software skill. Recently, I develop the tool that call NBI postcheck automation tool. As you know my team alway spend a lot of time and send a tons of Email and waiting to other team confirm they successful get and pull data from our system. And also do the same several test cases after major upgrade. I see that paint point and bring my idea to the my manager to buld the tool to do all that thing automatically. I start and work with other team to figure out how they can check the data from their end and transfer that to command line. The same I do with all the testcase in our system. The outcome is awesome , the team now can decreae from 2 hours to 2 mins by 1 mouse click. The main thing here I can utilize my software skill to help the team and business goal.  "
+},
+{
+    ques:"Tell me about a time when you were asked to do something you had never done before. How did you react? What did you learn?",
+    ans:"That’s great question actually, Last month my manager request me support one case that is to build a REST API to help users query site status replace for direct database login query. This kind of project I never done before , but I am very interested in this project and agree to start develop the API. Since I have experience in back-end so I need to learn and review the REST API requriment. I choose Nodejs in the back-end , define the route from use end and also find the way to get data and respond Json format to user. I spend extra hour for everyday as well as throguh weekend just focus on that. After a week I sucessful run the first test case. Also I open communicate with user to ask about testing. We open slack channel to exchange the idea to make the API more and more efficency. I completed the REST API for specific user after 2 weeks, now I still continue working to define more routes and feature for that REST so it can support to more and more users , decrase the load of database. Through this project, I add more skill to my skill set and deeply understand the dataflow run betwwen from front-end to back-end as well as how REST API working. How back-end interact with databas. This is very useful for me sunce my career goal is become full-stack developer and connect to database is very crucial point I need to cover.  "
+},
+
+{
+    ques:" Recall a time when you were assigned a task outside of your job description. How did you handle the situation? What was the outcome?",
+    ans:"That’s great question actually, Last month my manager request me support one case that is to build a REST API to help users query site status replace for direct database login query. This kind of project I never done before , but I am very interested in this project and agree to start develop the API. Since I have experience in back-end so I need to learn and review the REST API requriment. I choose Nodejs in the back-end , define the route from use end and also find the way to get data and respond Json format to user. I spend extra hour for everyday as well as throguh weekend just focus on that. After a week I sucessful run the first test case. Also I open communicate with user to ask about testing. We open slack channel to exchange the idea to make the API more and more efficency. I completed the REST API for specific user after 2 weeks, now I still continue working to define more routes and feature for that REST so it can support to more and more users , decrase the load of database. Through this project, I add more skill to my skill set and deeply understand the dataflow run betwwen from front-end to back-end as well as how REST API working. How back-end interact with databas. This is very useful for me sunce my career goal is become full-stack developer and connect to database is very crucial point I need to cover.  "
+},
+
+{
+    ques:"What are the three things that are most important to you in a job? ",
+    ans:"The biggest change so far I had in the job is the team was re-strcutred and it reuqired we need to work as vendor agnostic. Since my team before devide into 2 speratte group , one work on Nokia vendor and one is E//. This is the big change and require we have to learn across OSS sytem, it’s not easy. However, this is a requirement and I  must adapt as soon as possible. I make the plan to learn a new system. I spend 8 hours per week to learn the how the data flow (CM/PM/FM) , what protocol E// interact with Network Eleement as well as Northbouth interface. What is the most important script place inside the system etc … I also ask the my colleage to pair with me 2 hours per week to knowledge sharing , and also I can transfer to him about Nokia … Kill 2 birds with one stone right . Along with learn the new system, I volunteer to handle the TT , this is a best way to practice and apply what you learn. Also I join some project with standby role and learn as much as I can.  My SR manager really impress with my work, he did send some email reconization front the team , but I think the most important is my hardwork and willing to learn a new thing finnally pay off. Until now I still learning the ENM , learning is never stop right"
+},
+
+{
+    ques:"Tell me about a time when you had to juggle several projects at the same time. How did you organize your time? What was the result? ",
+    ans:"That’s great question, as you know in operation technical support enviroment, handle multiple job is “brad and milk” we should have the plan ahead if you don’t want get crazy. Last 2 months I handled 2 major procject in the same time. One is software upgrade and one is replacement backup system. Those contains many task overlap which each other. So this is my stargy to due with kind of this situation<br>1. I list all the task in Pier system (Peir is change system specfic for Tier 2 ) <br>2. Every Monday I go over all the tasks and make the note for all the key point and add that in to-do list <br>3. I marked the level of important to every task like: “asap”,”cannot ignore”,”take it easy”  to easy to identify priority of those <br>4. List all the important meeting will happen in week <br>5. Prepare all the precheck/postcheck after acitivy done <br>6. I also spend 1-2 hours per my schedule incase with the urgent thing happen in last minutes <br>7. After the task done , I imidiately update status , add the log and close the task in Pier to aovid confusing<br>So I just follow all these step and go through 2 project very smoothly. As I said if we have the prepareation so thing much more easier "
+},
+{
+    ques:"What are the three things that are most important to you in a job? ",
+    ans:"Hardworking : I think hard work is the first thing in my current job as well as any postion right. If the current workload is quite of high, if we do not hardworking I think we cannot get the job done<br>Teamwork: THe project ususllay contain many and many taks need to be done , if without support from the team so definitely you will burn out <br>Willing to learn a new thing : new technology and software upgrade coming bi-weekly that I few, so you must ready to learn a new thing if you don’t want feel like foolish when you join the meeting or handle the project. So willing to learn and fast learning will help you overcome this problem"
 }
 ];
