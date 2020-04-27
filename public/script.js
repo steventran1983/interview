@@ -4,7 +4,7 @@ window.onload = () => {
     let beQuestion_right = "";
     for (let i = 0; i < behaQuestion.length; i++) {
         let question = `<li onclick="modal('${behaQuestion[i].ans}','${behaQuestion[i].ques}')"> ${i}. ${behaQuestion[i].ques} </li>\n`;
-        if (i < 24) {
+        if (i < 30) {
             beQuestion_left = beQuestion_left + question;
         } else {
             beQuestion_right = beQuestion_right + question;
@@ -18,7 +18,7 @@ window.onload = () => {
     let reliability_right = "";
     for (let i = 0; i < reliability.length; i++) {
         let question = `<li onclick="modal('${reliability[i].ans}','${reliability[i].ques}')"> ${i}. ${reliability[i].ques} </li>\n`;
-        if (i < 5) {
+        if (i < 10) {
             reliability_left = reliability_left + question;
         } else {
             reliability_right = reliability_right + question;
@@ -26,7 +26,6 @@ window.onload = () => {
     }
     document.getElementById('reliability-anwser-left').innerHTML = reliability_left;
     document.getElementById('reliability-anwser-right').innerHTML = reliability_right;
-
 
     let database_left = "";
     let database_right = "";
@@ -163,6 +162,18 @@ const reliability = [{
 {
     ques: "what is Puppet",
     ans: "Pupet is a configuration management tool to ensure all the systems are configured to the desired states . Puppet also used as a deployment tool that help automatically deploy software on the system. Same as many devopos tool, puppet will have master environment contain main configuration and client environment that install in the server in the network. "
+},
+{
+    ques: "What is the plan after you got this job",
+    ans: "I will gather as much information as possible about the role and the requirements and then study that in my own time. The firsta day I start working to you, I want to already have a good understanding of the role and what you need me to do, these are the plan I prepare for new fole.  Since the daily works is regarding to JDA software component so I will priority invest that first , learn feature, functionalities and all software component WMS, warehouse labor management (WLM), and/or transportation management (TMS)<br>. Since the much we know and understand the software application the much we can easy to take advantage from it and know where troubleshoot if we have the problem,  Same time, I learn more about the Devops tool I do not have the chance to learn that before such as: Chef , Pupet Kubernetes<br>Thinking how to apply the my strength in software such as python, web development to make as much as possible the manually step become automated , that I used to make a lot of tool for my current team<br>Also , plan to deeply learning in cloud computing, first AWS then Auze if job required used both. I also plan to get a AWS devops certificate assossiatre , since it will my skill more strong as well as support this position very well <br>Last but not least, learn in out and our of the team, learning new process and also all stakeholder working with team to find the best way to support is most omportant thing I need cover as soon as possible"
+},
+{
+    ques: "Tell me again why we should give the job to you and not someone else ? ",
+    ans: "First and foremost, my competency and skill set are a match of this role. Although I see I have less experience about JDA software application but I think with my knowlege, ability, willing to lear and fast learner I strong belive I can cover that quick and hand on the project or support team soon <br>I am strong baground of DevOps, automation and also rpogramming language, THis is imporatant to adapt the work requirements as well as do further than that base on technical skill. <br>I work hard under pressure, meet strict deadlines and also work closely with other team members and deparments to achieve team objectives. You won't need watse your invaulable time to monitoring my performance because I am relaibale and trustworthy. <br>Last bu not least , I am in TMO around 2 years, so I understand TMO process, company culture therefore easy to integrate myselft to the team to collaborate and contribute and go success.The job is very imporant to me that mean I will work very hard in team to deliver result <br>With those point I think I am a best candidate and no one can beat me :). "
+},
+{
+    ques: "What is about this job that your are particularly attracted to ? ",
+    ans: "Apert from having the necessary skills to perform the role to a very high statndard, I am actially attracted about the ooopertunity I can improve myself and my knowledge. At you can see I am really lvoe new technology, ant this role contain most relevent technology such as Devops Automation ,docker , kubernetes , as well as it has the place I can utilize my softwaer skill scripting with bash , python. And also JDA is a great software I want to learn about that , Actually I did spend sometime weeked to research about JDA and its componenet but its very limit documentation about that, so just only way is got this job and learn more about that. Last but not least , the job will support the deploy the 5G in nation wild, and I want become the part of this revolution. "
 },
 {
     ques: "The End of Interview",
