@@ -254,6 +254,10 @@ const reliability = [{
     ans: "Apert from having the necessary skills to perform the role to a very high statndard, I am actially attracted about the ooopertunity I can improve myself and my knowledge. At you can see I am really lvoe new technology, ant this role contain most relevent technology such as Devops Automation ,docker , kubernetes , as well as it has the place I can utilize my softwaer skill scripting with bash , python. And also JDA is a great software I want to learn about that , Actually I did spend sometime weeked to research about JDA and its componenet but its very limit documentation about that, so just only way is got this job and learn more about that. Last but not least , the job will support the deploy the 5G in nation wild, and I want become the part of this revolution. "
 },
 {
+    ques:"What make you stand-out",
+    ans:"I can do the work you need me to do, and I can deliver exceptional results. I will fit in seamlessly and be a great condition to your team. I have a combineation of job desription-mathcing skills, experiece and knowledge  that make me stand out. And I believe hiring me will not make you look smart, but it will also make your life easier too. I don'tneed micro-managing or continually supervisiong and I can hit the graoud running , since I am in this company and understand how the daily jon in TMo"
+},
+{
     ques: "The End of Interview",
     ans: "How deep we manage the JDA software application ? Those is cloud base application , we own and manage that cloud ? <br>Base on the job describtion and our discussion, I see the daily work is around JDA software application WMS or WLM transportation management (TMS) , so where is the place we can utilize the devops too, or automation as well as promming language ? Could you please show me on case ? <br>Who’s the most successful recently hire and why? <br>What is the biggest challenge in the team and how this position can help to overcome that challenge?<br>What additional skill and experience do you wish I had to make me a better fit on this job?<br>Is there anything leaving you a hesitancy to hiring for this position?<br>What is the next step in the process?, What are the most important qualifications the hiring manager is looking for? "
 }, 
@@ -287,6 +291,10 @@ const behaQuestion = [{
 {
     ques: "What work enviroment do you prefer?",
     ans: `I really like the environment in my current position. My manager is a great resource and always willing to help out when I run into an issue, but they trust me to get my work done so I have a lot of freedom in how I schedule and prioritize, which is very important to me.I think all of us have the Power of trust training, so this is is a usercase we can apply right.  Everyone has their own cubicle, so it’s often pretty quiet to get our work done, but our our team has a lot of check-in meetings and communicates frequently via Slack or talking directly if we have the question,  so we still get a lot of opportunities to bounce ideas off each other to collaborate and contribute. `
+},
+{
+    ques:"How do you define Success",
+    ans:"I define sucess is get the job well done and deliver the high standard result in any project I handle. Aslo my success are meeting combineation of company and personal goal, and help my team do the same.we not only help the company by meeting its objectives, but we also become more effective employees that can contribute to even greater growth in the future.<br>Example in project recently, I did lead the team to complete the tool and got many reconization from manaamgnet level. But the thing is more important than reconization is I did sharing my knowledge to my team about software, database that help my team improve and add more skill that prepare good for them in the future and I happy about that."
 },
 {
     ques: "WHY TMO",
@@ -417,6 +425,7 @@ const behaQuestion = [{
     ans: "Hardworking : I think hard work is the first thing in my current job as well as any postion right. If the current workload is quite of high, if we do not hardworking I think we cannot get the job done<br>Teamwork: THe project ususllay contain many and many taks need to be done , if without support from the team so definitely you will burn out <br>Willing to learn a new thing : new technology and software upgrade coming bi-weekly that I few, so you must ready to learn a new thing if you don’t want feel like foolish when you join the meeting or handle the project. So willing to learn and fast learning will help you overcome this problem"
 },
 {
+<<<<<<< HEAD
     ques: "Set Goal and how to achieve that goal",
     ans: "The greatest goal I set was to graduate master degree as an honors student(sraight A)  while still working full time in a related field. <br>And finally I got my master degree with straght A last month. Reaching this goal showed me that I could dedicate myself to my career, and reach the goals that I set for myself. <br>To achieve this goal, nothing but working hard and make the reasonale plan between work and studying. I always take extra hours perday to learn day by day lecture and practice on that <br>I never wait until last minute before exam or quiz and assignment due day to start studying. Instead of that, I review and make note for lecture in free time, weekend if the workload of mine is very high and sometime required oncall. By that way, when exam comming, I just spend little time to connect all knowledge I did learn before and alway feel ready front of any exam challange. For now, I continue to update myself, I plan to get AWS assossite devops. Cloud skill is very crucial now and especially in this position, so I want to get that to make my skill more fit on this role. "
 },
@@ -431,5 +440,13 @@ const behaQuestion = [{
 {
     ques: "What do you want to say to the team",
     ans: " Due to pandamic, we do not have a chance to work face to face so it might be affect to team's communication. So my dvice is try the best to maintain communication among the team, collaborate and working together as much as we can."
+=======
+    ques:"Give example for the goal and how you achieve that",
+    ans:"a"
+},
+{
+    ques:"Give example for disagree with your manager and how you handed it",
+    ans:"a"
+>>>>>>> 8778b0ad05df8e81d15e90151e7fe71f112e342a
 }
 ];
