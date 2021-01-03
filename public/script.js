@@ -40,6 +40,22 @@ window.onload = () => {
     document.getElementById('database-anwser-left').innerHTML = database_left;
     document.getElementById('database-anwser-right').innerHTML = database_right;
 
+
+
+
+    let team_left = "";
+    let team_right = "";
+    for (let i = 0; i < team.length; i++) {
+        let question = `<li onclick="modal('${team[i].ans}','${team[i].ques}')"> ${i}. ${team[i].ques} </li>\n`;
+        if (i < 10) {
+            team_left = team_left + question;
+        } else {
+            team_right = team_right + question;
+        }
+    }
+    document.getElementById('team-anwser-left').innerHTML = team_left;
+    document.getElementById('team-anwser-right').innerHTML = team_right;
+
 };
 
 const database = [
@@ -121,8 +137,70 @@ const database = [
     {
         ques: "What is ETL",
         ans: "Extract is the process of reading data from a database. In this stage, the data is collected, often from multiple and different types of sources.<br>Transform is the process of converting the extracted data from its previous form into the form it needs to be in so that it can be placed into another database. Transformation occurs by using rules or lookup tables or by combining the data with other data.<br>Load is the process of writing the data into the target database."
+    },
+    {
+        ques: "What is software development lifecycle",
+        ans: "SDLC or the Software Development Life Cycle is a process that produces software with the highest quality and lowest cost in the shortest time possible.There are several model of SDLC process such as waterfall,Agile<br>Requirement analysis<br>Planning<br>Software design such as architectural design<br>Software development<br>Testing<br>Deployment"
     }
 ];
+
+
+
+
+const team = [
+    {
+        ques: "What Would You Bring to Our Team?",
+        ans:"In addition to my experience, I would like bring a great attitude and a willingness to take on any task. At my last job, I was always looking for ways to help and also share the knowledge among the team. Based on what I know about legacy T-Mobile network I can help the team know and understand more about it that thing I believe our team still not familiar with because the merger just happens back few months. In addition, based on software skill I can develop some tool and application that can help the team save a ton of time and effort as I used to done with OSS team. Since I am an innovative person, I always looking into the existing paint point of the team as well as something different and try to make an innovation to help team out. I will keep an eye into team’s workload and ready to help and support if needed to sharing workload In short, If I am a part of team I afford to contribute and help the team grow fast and stronger."
+    },
+    {
+        ques: "How do you feel about working in a team environment?",
+        ans:"I am really enjoyed and exited working in a team. I consider this is a great opportunity that you can improve communication skill and build the relationship with team member. More important, I can learn a new thing, exchange the knowledge among team that make us a big improvement and get good experience. when working in team we will get more idea and solutions that make our work optimal and fast that we cannot find when we work individually. Different team members contribute different perspectives, and the synergy between team members can produce creative and productive results and better solution. Let me tell you a project that I and my college handle. That’s the major software upgrade across of system. First, we join the kickoff meeting and MOP review, ask and clarify the ambiguous implementing step and process. Review and add the test case, ask the question etc. After that 2 of us work together to discuss the workload sharing. We agree to divide equality the number of systems to each other and my responsibility to go over all the post checks in the first OSS upgrade, then I be with him in the next one in case he still get confusion in new system. I also holding the weekly call with him to review all work done, we used slack channel, skype for more convenience communication. After 2 months, 20 system has been completed. we document all and upload to SharePoint and finally, we request the lesson learn with vendor to make sure some minor issue will not repeat in next project. My manager surprise since the project is kind of huge tasks but going very smooth."
+    },
+    {
+        ques: "What strategies would you use to motivate your team?",
+        ans:"Motivation often comes from smaller recognitions, rather than large gestures. I make time to thank my teammates with email and recognition. I let them know how much their hard work means to me and the rest of the team. I want to all the team have credit from the project we join. Another way, in technical side, I used my strength such as hardworking, knowledgeable and willing to learn and try the new thing to motivate the team as well. Team can see how I improve day by day so they can plan to improve themselves. Before I join team, only bash script is used the most in OSS team, I am a first person who is bring python into team recommended everyone should learn and use it, so for now , python is bread and meal with all team member. They did add one new programming language into their coding skill. Casey, you can verify that with Anand and Deepak right. "
+    },
+    {
+        ques: "Do you prefer to work as part of a team or independently?",
+        ans:"I enjoy splitting my time between working as part of a team and working independently. In my past positions, for solving problems and handling large projects, being part of a group and working in team was usually beneficial. Diversity in team bring the creativity and innovative to generate a great solution and method. However sometimes, I found that detail-oriented tasks with highly defined processes were better accomplished independently, as it made maintaining focus easier. Each approach has its place, so I embrace them both depending on the situation at hand. "
+    },
+    {
+        ques: "When you’re in a team situation, what role do you usually play? teamplayer",
+        ans:"I am a team player, I am doing good in both contributor as well as a leader if I have a chance. Regardless of the role I am put in, I utilize my reliability, communication skills, positive attitude, and outgoing personality so that I can become a key contributor. Basically, whatever we do we aim to achieve a common goal of the team and finish project without any issue and meet a timeline. one recent project I am working on is designing the high level architecture diagram for WMS. My team contain me, product manager, 2 analyst and principal engineer. We dived up the task base on the individual strength. I was working on design the technology, protocol for all interface btw WMS and internal TMO application. We hold the meeting every 2 days to review and report the progress.  During working there were some disagreement among the team member about the design, in that situation we step back and listening each other to find better solution. After a month we are complete, and my manager really satisfy with the first concept "
+    },
+
+    {
+        ques: "Describe a time when you worked well as part of a team",
+        ans:"in my last position, four of my colleagues and I were tasked with a complex project. That is building up the brand-new OSS and after that is migration the node from other OSS, 4 OSS has been build up , these OSS is dedicate for Spring node (4G 5G).We had to work together, relying on each other’s strengths to complete the required work. To get started, we assessed the tasks we needed to accomplish as well as our skillsets. Then, we divvied up the workload, accordingly, ensuring we could focus our effort on areas where we shined and familiar. For the first meeting with vendor, it required all of us join to review the MOP and identify the change, the timeframe of project, what is major software upgrade what is the plan for roll back ... I am good on programing and Linux command, so I got the task to do the pre check and post check and OSS acceptance. Other one is communicating with upstream team to notify them about new OSS, and last one is work with vendor though out deployment process. This approach kept our efforts organized and ultimately led the project to success. "
+    },
+    {
+        ques: "Have you ever had difficulty conflict working with a manager or other team members?",
+        ans:"We do not want to get any issue or difficulty with team, however, from different personality and point of view so its unavoidable right. Such as last project when I have a conflict with my team member when design an API btw WMS and SAP (finance application). Currently, they exchange data, report though file base by SFTP. At you know, there are many problems happen since file transfer is never the best way to exchange data, lost file, SFTP server error, lost connection was happening frequently … So I come up with solution is develop the REST API, instead of drop and send file , we send HTTP request, more secure and reliable however, my team member not agree and the reason she concern is bout resource available and not easy to develop and implementing. I took that feedback and get an meeting with her to asking why she refuse the change, the meeting is open , I explain the insufficient of SFTP and API can solve these problem we experience so far in other way, due to resource is not available she not comfortable to deploy my idea. We step back and listening each other and agree to have better solution. We make a midterm and long term solution, short- midterm we request SAP instead of export the file, they should insert record into sharing database btw TMO and vendor, and long term is develop an API when we have more resource and infrastructure more power. Ultimately, problem is solved, and it does not happen again. So, I learn from that is even we are having conflict, disagreement but talk straight and listening to each other, brainstorming, and working together will help us go over it and achieve the common goal of team. "
+    },
+    {
+        ques: "what would you do if a team member was not pulling their way? Not 100% contribute",
+        ans:"The first I consider this is as a wider problem. If someone is not carrying out their duties and responsibility properly, it will impact the rest of the team and combined effort. To be a good team, everyone must work properly. I think talk in person; listening is the best way to solve this problem. If he/she got personal home issue, in which way I would support to bring them back right speed as soon as possible, if lack of motivation, I will try to explain how the important of their work and how it affect to the whole team is we miss their contribution"
+    },
+    {
+        ques: "what are qualities for a good team/ team effectively? ",
+        ans:"We are technical support team so the first important thing we need is technical skill, we should have a firm knowledge about our network and system. Also troubleshooting skill must have. Team should share objective and common goal , all team member should work on their project to achieve the same common goad addition, each team member needs to be communication effectively, In both speaking to all the team member during performing the task as well as listening what everyone saying. Team should be flexible and adaptable through the team task as the things can and often change very quickly. motivate and support team are also considering the key of teamwork, we are ready to help and jump in any situation if someone need help. The last one is innovative, team should have the skill thinking outside of box, something different to help the team standout, save time and effort make the daily work become easier. "
+    },
+    {
+        ques: "Have you ever had difficulty conflict working with a manager or other team members?",
+        ans:""
+    },
+    {
+        ques: "Have you ever had difficulty conflict working with a manager or other team members?",
+        ans:""
+    },
+    
+];
+
+
+
+
+
+
 
 const reliability = [{
     ques: "What is system Reliability",
@@ -169,7 +247,7 @@ const reliability = [{
 },
 {
     ques: "Tell me again why we should give the job to you and not someone else ? ",
-    ans: "First and foremost, my competency and skill set are a match of this role. Although I see I have less experience about JDA software application but I think with my knowlege, ability, willing to lear and fast learner I strong belive I can cover that quick and hand on the project or support team soon <br>I am strong baground of DevOps, automation and also rpogramming language, THis is imporatant to adapt the work requirements as well as do further than that base on technical skill. <br>I work hard under pressure, meet strict deadlines and also work closely with other team members and deparments to achieve team objectives. You won't need watse your invaulable time to monitoring my performance because I am relaibale and trustworthy. <br>Last bu not least , I am in TMO around 2 years, so I understand TMO process, company culture therefore easy to integrate myselft to the team to collaborate and contribute and go success.The job is very imporant to me that mean I will work very hard in team to deliver result <br>With those point I think I am a best candidate and no one can beat me :). "
+    ans: "First and foremost, my competency and skill set are a match of this role. Although I see I have less experience about JDA software application but I think with my knowlege, ability, willing to lear and fast learner I strong belive I can cover that quick and hand on the project or support team soon <br>I am strong baground of DevOps, automation and also rpogramming language, THis is imporatant to adapt the work requirements as well as do further than that base on technical skill. <br>I work hard under pressure, meet strict deadlines and also work closely with other team members and deparments to achieve team objectives. You wiil not need watse your invaulable time to monitoring my performance because I am relaibale and trustworthy. <br>Last bu not least , I am in TMO around 2 years, so I understand TMO process, company culture therefore easy to integrate myselft to the team to collaborate and contribute and go success.The job is very imporant to me that mean I will work very hard in team to deliver result <br>With those point I think I am a best candidate and no one can beat me :). "
 },
 {
     ques: "What is about this job that your are particularly attracted to ? ",
@@ -177,16 +255,14 @@ const reliability = [{
 },
 {
     ques: "The End of Interview",
-    ans: "Who’s the most successful recently hire and why? <br>What is the biggest challenge in the team and how this position can help to overcome that challenge?<br>What additional skill and experience do you wish I had to make me a better fit on this job?<br>Is there anything leaving you a hesitancy to hiring for this position?<br>What is the next step in the process? "
-}
-
-
+    ans: "How deep we manage the JDA software application ? Those is cloud base application , we own and manage that cloud ? <br>Base on the job describtion and our discussion, I see the daily work is around JDA software application WMS or WLM transportation management (TMS) , so where is the place we can utilize the devops too, or automation as well as promming language ? Could you please show me on case ? <br>Who’s the most successful recently hire and why? <br>What is the biggest challenge in the team and how this position can help to overcome that challenge?<br>What additional skill and experience do you wish I had to make me a better fit on this job?<br>Is there anything leaving you a hesitancy to hiring for this position?<br>What is the next step in the process?, What are the most important qualifications the hiring manager is looking for? "
+}, 
 ];
 
 
 const behaQuestion = [{
     ques: "What is DevOps",
-    ans: "My name is Thang Tran. I currently engineer at Tier 2 OSS team. IN my current role, I am responsible for the system administrator. Handle Fault management, Performance management, configuration management, Audit of for TMO network element (BSC,RNC, enodeB about RAN side). <br>I am also main person in the team to design, develop and maintain the monitoring script and collaborate cross- functional team to build the automation tool, web GUI apllication,  I also have experience of working with other developers, engineers and also vendor<br>In addition, my daily job are troubleshoot and resolve highly complex technical design or service issues that cannot be resolved through normal operations and maintenance procedures,find the root cause analysis to drive issue resolution and limits impact to the internal user.I also provide on-site and remote support during major upgrade and integrate new node into system with vendor<br>For short 2 years I have several achievements with team , complete over 10 main projects and develop several applications, automation tools. Based on my contribution and support to users, I have over 10 stars recognition 2-time recognited front of  TSD&S department. <br>For education, I just complete master of SW from Colorado technical University  GPA 4.0. One BS computer science and 1 BS about networking engineer <br>I am passionate about new technology, cloud and DevsOp tool , especially database and software. What I am looking for in this position is an opportunity to utilize my skills, , improving it, learning new thing and collaborate, contribute to the team.  "
+    ans: "My name is Thang Tran. I currently system reliability egineer in supply chain domain. In current role help team integrate internal TMO application with the vendor warehouse management system and build the tool, machenism to monitor the system as well as interfaces. Hookup that into Splunk also for the system administrator. Handle Fault management, Performance management, configuration management, Audit of for TMO network element (BSC,RNC, enodeB about RAN side). <br>I am also main person in the team to design, develop and maintain the monitoring script and collaborate cross- functional team to build the automation tool, web GUI apllication,  I also have experience of working with other developers, engineers and also vendor<br>In addition, my daily job are troubleshoot and resolve highly complex technical design or service issues that cannot be resolved through normal operations and maintenance procedures,find the root cause analysis to drive issue resolution and limits impact to the internal user.I also provide on-site and remote support during major upgrade and integrate new node into system with vendor<br>For short 2 years I have several achievements with team , complete over 10 main projects and develop several applications, automation tools. Based on my contribution and support to users, I have over 10 stars recognition 2-time recognited front of  TSD&S department. <br>For education, I just complete master of SW from Colorado technical University  GPA 4.0. One BS computer science and 1 BS about networking engineer <br>I am passionate about new technology, cloud and DevsOp tool , especially database and software. What I am looking for in this position is an opportunity to utilize my skills, , improving it, learning new thing and collaborate, contribute to the team.  "
 },
 {
     ques: "Why do you want to leave?",
@@ -339,5 +415,21 @@ const behaQuestion = [{
 {
     ques: "What are the three things that are most important to you in a job? ",
     ans: "Hardworking : I think hard work is the first thing in my current job as well as any postion right. If the current workload is quite of high, if we do not hardworking I think we cannot get the job done<br>Teamwork: THe project ususllay contain many and many taks need to be done , if without support from the team so definitely you will burn out <br>Willing to learn a new thing : new technology and software upgrade coming bi-weekly that I few, so you must ready to learn a new thing if you don’t want feel like foolish when you join the meeting or handle the project. So willing to learn and fast learning will help you overcome this problem"
+},
+{
+    ques: "Set Goal and how to achieve that goal",
+    ans: "The greatest goal I set was to graduate master degree as an honors student(sraight A)  while still working full time in a related field. <br>And finally I got my master degree with straght A last month. Reaching this goal showed me that I could dedicate myself to my career, and reach the goals that I set for myself. <br>To achieve this goal, nothing but working hard and make the reasonale plan between work and studying. I always take extra hours perday to learn day by day lecture and practice on that <br>I never wait until last minute before exam or quiz and assignment due day to start studying. Instead of that, I review and make note for lecture in free time, weekend if the workload of mine is very high and sometime required oncall. By that way, when exam comming, I just spend little time to connect all knowledge I did learn before and alway feel ready front of any exam challange. For now, I continue to update myself, I plan to get AWS assossite devops. Cloud skill is very crucial now and especially in this position, so I want to get that to make my skill more fit on this role. "
+},
+{
+    ques: "Disagree with boss",
+    ans: "I want to say I have a great manager , he always stay behind me to support what I need and reconigze me when I got the job well done, disagree with my manager is very rare case. I want to said for last three month, my manager assigned me the project to support cross functional team to build the front-end of allocation. Actually I always ready to help someone when they need but in that time I really busy in current project when I am hand one same time 2 major project. I did private talk with him and intend to push back since I don’t want that affect to my current project. <br>We talk together and he did explain for me the reason he assign that task since he want to help increase my visibility into wide deparment not only in OSS team. That;s will help me a lot in my career such as promotion and reconization. After discussed I think I in the wrong side already, I say apoplogy to him and pleasure to tak that project. <br>Even on that scenario, I was not right but I thin kthe best way to due with some disagreement is direct communication , talk straight. We are the team and need transparent right. So if I did not talk with my manager straight and still take that project with uncomfortable , so it not good right. "
+},
+{
+    ques: "Immediate impact",
+    ans: "I would follow 3 stage plan that would ensure I would make an immediate and positive impact. First, I would obtain a claer brief from my supervisor on what it is I need to do within the role to the correct statndard. Seconly, I would learn as much about technology requirement, software service in order to I had a thorough knowledge what they are and how they benefit to dailyjob. Finally I would put in extra hours work needed each day to become fully competent is the fastest time possible so that I can make a quick immediate impact and support to the team  "
+},
+{
+    ques: "What do you want to say to the team",
+    ans: " Due to pandamic, we do not have a chance to work face to face so it might be affect to team's communication. So my dvice is try the best to maintain communication among the team, collaborate and working together as much as we can."
 }
 ];
